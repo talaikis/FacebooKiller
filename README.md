@@ -17,7 +17,9 @@ time_limit_stage_three = 120
 
 ## Installation & how to use
 
-TBD.
+...
+
+Fast workaround. Change killer.py to killer.pyw and open with pytonw, it will run in background.
 
 ## How to build
 
