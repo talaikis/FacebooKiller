@@ -18,7 +18,7 @@ time_limit_stage_three = 120
 ## Use without build
 
 * Obviously you need Python (3.6).
-* Install requiremrnts ```text pip install -r requirements.txt```
+* Install requiremrnts ```pip install -r requirements.txt```
 * Edit the killer.py inputs.
 * Move killer/ folder to your user path, e.g.:C:\Users\<username>\killer
 * Move fb-killer-starter.bat to C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
