@@ -15,13 +15,11 @@ time_limit_stage_two = 50
 time_limit_stage_three = 120
 ```
 
-## Installation & how to use
+## Use without build
 
-...
-
-# Use without build
-
-* Edit the inputs.
+* Obviously you need Python (3.6).
+* Install requiremrnts ```text pip install -r requirements.txt```
+* Edit the killer.py inputs.
 * Move killer/ folder to your user path, e.g.:C:\Users\<username>\killer
 * Move fb-killer-starter.bat to C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
@@ -37,7 +35,7 @@ Then you'll find your killer.exe in dist/
 
 ## Prerequisites
 
-Works on Windows with Google Chrome only.
+Works on Windows (8.1 tested) with Google Chrome.
 
 # Known issues
 
