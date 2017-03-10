@@ -37,6 +37,6 @@ Then you'll find your killer.exe in dist/
 
 Works on Windows (8.1 tested) with Google Chrome.
 
-# Known issues
+## Known issues
 
 * .exe doesn't play audio files (Python 3.6, Pyintslaler dev.)
