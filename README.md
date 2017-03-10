@@ -19,7 +19,13 @@ time_limit_stage_three = 120
 
 ...
 
-Fast workaround. Change killer.py to killer.pyw and open with pytonw, it will run in background.
+# Use without build
+
+* Edit the inputs.
+* Move killer/ folder to your user path, e.g.:C:\Users\<username>\killer
+* Move fb-killer-starter.bat to C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+Voila, FacebooKiller will start with the machine boot.
 
 ## How to build
 
