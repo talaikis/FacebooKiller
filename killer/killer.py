@@ -2,10 +2,11 @@ import winsound
 import ctypes
 from time import sleep
 import win32con
+from os.path import (dirname, join)
 
 
 #where you should limit your time
-websites_to_kill = ['Facebook', 'Youtube']
+websites_to_kill = ['Facebook']
 
 # alert after this time
 time_limit_stage_one = 30
@@ -15,6 +16,8 @@ time_limit_stage_two = 50
 
 # killl chrome if nothing helps
 time_limit_stage_three = 120
+
+base_path = dirname(__file__)
 
 EnumWindows = ctypes.windll.user32.EnumWindows
 EnumWindowsProc = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.POINTER(ctypes.c_int), ctypes.POINTER(ctypes.c_int))
@@ -42,11 +45,11 @@ def foreach_window(hwnd, lParam):
 
 def alerter(i, wnds):
     if (i >= time_limit_stage_one) & (i < time_limit_stage_two):
-        winsound.PlaySound('one.wav', winsound.SND_FILENAME)
+        winsound.PlaySound(join(base_path, 'one.wav'), winsound.SND_FILENAME)
         i += 10
     if (i >= time_limit_stage_two) & (i < time_limit_stage_three):
         CloseWindow(wnds[0])
-        winsound.PlaySound('two.wav', winsound.SND_FILENAME)
+        winsound.PlaySound(join(base_path, 'two.wav'), winsound.SND_FILENAME)
         i += 2
     elif i >= time_limit_stage_three:
         SendMessageA(wnds[0], win32con.WM_CLOSE, 0, 0)
