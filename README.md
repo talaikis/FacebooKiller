@@ -20,8 +20,8 @@ time_limit_stage_three = 120
 * Obviously you need Python (3.6).
 * Install requiremrnts ```pip install -r requirements.txt```
 * Edit the killer.py inputs.
-* Move killer/ folder to your user path, e.g.: C:\Users\&lt;username&gt;\killer
-* Move fb-killer-starter.bat to C:\Users\&lt;username&gt;\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+* Move killer/ folder to your user path, e.g.: C:\Users\[username]\killer
+* Move fb-killer-starter.bat to C:\Users\[username]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
 Voila, FacebooKiller will start with the machine boot.
 
